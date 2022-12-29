@@ -1,0 +1,29 @@
+class A {
+    String name;
+    int rollno;
+    void displayname(String name){
+        System.out.println("hi! "+ name +"\n");
+    }
+}
+class B extends A {
+    String section;
+    void displayrollno(int rollno){
+        System.out.println("Your rollno is "+ rollno +"\n");
+    }
+}
+class C extends B {
+    void displaysection(String section){
+        System.out.println("You are in section-"+section);
+} 
+}
+
+
+class Main {
+    public static void main(String[] args) {
+        C c = new C();
+        c.displayname("Aditya");
+        c.displayrollno(25584);
+        c.displaysection("B");
+        
+    }
+}
